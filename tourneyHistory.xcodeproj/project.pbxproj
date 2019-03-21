@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81034FFD2243EEDE00C2B582 /* DefaultGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81034FFB2243EEDE00C2B582 /* DefaultGameCell.swift */; };
+		81034FFE2243EEDE00C2B582 /* DefaultGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81034FFC2243EEDE00C2B582 /* DefaultGameCell.xib */; };
+		81A44AC522419B8B0075D63A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A44AC422419B8B0075D63A /* LoginViewController.swift */; };
+		81A44AC72241A0240075D63A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A44AC62241A0240075D63A /* Home.storyboard */; };
+		81A44AC92241A1C40075D63A /* DatabaseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A44AC82241A1C40075D63A /* DatabaseKeys.swift */; };
+		81A44ACB2241A2600075D63A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A44ACA2241A2600075D63A /* DatabaseManager.swift */; };
 		81AA1D37223BFCCD001974F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA1D36223BFCCD001974F1 /* AppDelegate.swift */; };
-		81AA1D3C223BFCCD001974F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AA1D3A223BFCCD001974F1 /* Main.storyboard */; };
 		81AA1D3F223BFCCD001974F1 /* tourneyHistory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81AA1D3D223BFCCD001974F1 /* tourneyHistory.xcdatamodeld */; };
 		81AA1D41223BFCCF001974F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AA1D40223BFCCF001974F1 /* Assets.xcassets */; };
 		81AA1D44223BFCCF001974F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AA1D42223BFCCF001974F1 /* LaunchScreen.storyboard */; };
@@ -42,9 +47,14 @@
 		0D375B34D7AB34377905C4E1 /* Pods-tourneyHistoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tourneyHistoryTests.debug.xcconfig"; path = "Target Support Files/Pods-tourneyHistoryTests/Pods-tourneyHistoryTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1B131E00D6F33B5579869383 /* Pods_tourneyHistory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tourneyHistory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7990A65EB0451E0A15DAEFBC /* Pods-tourneyHistoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tourneyHistoryTests.release.xcconfig"; path = "Target Support Files/Pods-tourneyHistoryTests/Pods-tourneyHistoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		81034FFB2243EEDE00C2B582 /* DefaultGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGameCell.swift; sourceTree = "<group>"; };
+		81034FFC2243EEDE00C2B582 /* DefaultGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultGameCell.xib; sourceTree = "<group>"; };
+		81A44AC422419B8B0075D63A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		81A44AC62241A0240075D63A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		81A44AC82241A1C40075D63A /* DatabaseKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseKeys.swift; sourceTree = "<group>"; };
+		81A44ACA2241A2600075D63A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		81AA1D33223BFCCD001974F1 /* tourneyHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tourneyHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AA1D36223BFCCD001974F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81AA1D3B223BFCCD001974F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81AA1D3E223BFCCD001974F1 /* tourneyHistory.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = tourneyHistory.xcdatamodel; sourceTree = "<group>"; };
 		81AA1D40223BFCCF001974F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81AA1D43223BFCCF001974F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,6 +98,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81A44AC1224199960075D63A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		81AA1D2A223BFCCD001974F1 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +128,7 @@
 		81AA1D35223BFCCD001974F1 /* tourneyHistory */ = {
 			isa = PBXGroup;
 			children = (
+				81A44AC1224199960075D63A /* ViewModels */,
 				81D559382240320F00886A7C /* Extensions */,
 				81D559352240313800886A7C /* Firebase Uitilities */,
 				81AA1D45223BFCCF001974F1 /* Info.plist */,
@@ -148,7 +166,7 @@
 			children = (
 				81AA1D42223BFCCF001974F1 /* LaunchScreen.storyboard */,
 				81AA1D59223BFD02001974F1 /* AccountCreation.storyboard */,
-				81AA1D3A223BFCCD001974F1 /* Main.storyboard */,
+				81A44AC62241A0240075D63A /* Home.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -168,6 +186,8 @@
 			children = (
 				81D5593B2240341B00886A7C /* LoginView.xib */,
 				81D5593D22403B7100886A7C /* LoginView.swift */,
+				81034FFB2243EEDE00C2B582 /* DefaultGameCell.swift */,
+				81034FFC2243EEDE00C2B582 /* DefaultGameCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +195,7 @@
 		81AA1D65223C0BAE001974F1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				81A44AC422419B8B0075D63A /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -193,6 +214,8 @@
 			isa = PBXGroup;
 			children = (
 				81D559362240315500886A7C /* UserSession.swift */,
+				81A44AC82241A1C40075D63A /* DatabaseKeys.swift */,
+				81A44ACA2241A2600075D63A /* DatabaseManager.swift */,
 			);
 			path = "Firebase Uitilities";
 			sourceTree = "<group>";
@@ -312,8 +335,9 @@
 				81AA1D44223BFCCF001974F1 /* LaunchScreen.storyboard in Resources */,
 				81AA1D41223BFCCF001974F1 /* Assets.xcassets in Resources */,
 				81D5593C2240341B00886A7C /* LoginView.xib in Resources */,
+				81034FFE2243EEDE00C2B582 /* DefaultGameCell.xib in Resources */,
+				81A44AC72241A0240075D63A /* Home.storyboard in Resources */,
 				81AA1D5C223C03DE001974F1 /* GoogleService-Info.plist in Resources */,
-				81AA1D3C223BFCCD001974F1 /* Main.storyboard in Resources */,
 				81AA1D5A223BFD02001974F1 /* AccountCreation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,14 +441,18 @@
 			files = (
 				81AA1D6A223C2C91001974F1 /* ImageCache.swift in Sources */,
 				81AA1D5E223C0AEE001974F1 /* DefaultGamesManager.swift in Sources */,
+				81A44ACB2241A2600075D63A /* DatabaseManager.swift in Sources */,
 				81AA1D3F223BFCCD001974F1 /* tourneyHistory.xcdatamodeld in Sources */,
 				81AA1D37223BFCCD001974F1 /* AppDelegate.swift in Sources */,
 				81AA1D6C223C2CBD001974F1 /* NetworkHelper.swift in Sources */,
 				81AA1D60223C0B15001974F1 /* DefaultGame.swift in Sources */,
+				81A44AC92241A1C40075D63A /* DatabaseKeys.swift in Sources */,
 				81AA1D6E223C2CE8001974F1 /* AppError.swift in Sources */,
+				81034FFD2243EEDE00C2B582 /* DefaultGameCell.swift in Sources */,
 				81D5593A2240322500886A7C /* UIViewController+Alerts.swift in Sources */,
 				81D5593E22403B7100886A7C /* LoginView.swift in Sources */,
 				81D559372240315500886A7C /* UserSession.swift in Sources */,
+				81A44AC522419B8B0075D63A /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,14 +475,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		81AA1D3A223BFCCD001974F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81AA1D3B223BFCCD001974F1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		81AA1D42223BFCCF001974F1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

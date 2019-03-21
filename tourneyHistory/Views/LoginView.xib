@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="tourneyHistory" customModuleProvider="target">
             <connections>
-                <outlet property="accountLabel" destination="qBE-cr-nv8" id="GpS-Y4-dr4"/>
+                <outlet property="accountMessageLabel" destination="qBE-cr-nv8" id="Hv4-AU-cZL"/>
                 <outlet property="contentView" destination="ufS-p5-aMW" id="N2T-YQ-7Wv"/>
                 <outlet property="emailTextField" destination="n4h-OD-Fo0" id="TFS-zg-zvl"/>
                 <outlet property="loginButton" destination="RRi-If-tbE" id="rzr-Jy-amq"/>

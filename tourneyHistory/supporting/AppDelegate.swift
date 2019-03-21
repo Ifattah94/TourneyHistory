@@ -14,11 +14,29 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var usersession: UserSession!
+   // var storageManager: StorageManager!
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        usersession = UserSession()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+
+        if let _ = usersession.getCurrentUser() {
+            let storyboard = UIStoryboard(name: "Home", bundle: nil)
+            let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeVC")
+            window?.rootViewController = homeVC
+        } else {
+            let storyboard = UIStoryboard(name: "AccountCreation", bundle: nil)
+            let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            window?.rootViewController = loginViewController
+        }
+        window?.makeKeyAndVisible()
+        
+        
         return true
     }
 
