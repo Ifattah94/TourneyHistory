@@ -33,7 +33,7 @@ extension LoginViewController: LoginViewDelegate {
 }
 extension LoginViewController: UserSessionAccountCreationDelegate {
     func didCreateAccount(_ userSession: UserSession, user: User) {
-        //present Account Creation VC
+    
     }
     
     func didRecieveErrorCreatingAccount(_ userSession: UserSession, error: Error) {

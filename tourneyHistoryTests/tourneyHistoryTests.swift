@@ -7,7 +7,8 @@
 //
 
 import XCTest
-@testable import tourneyHistory
+@testable import tourneyHistory 
+
 
 class tourneyHistoryTests: XCTestCase {
 
@@ -18,17 +19,17 @@ class tourneyHistoryTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    
+    func testGameViewModel() {
+        let game = DefaultGame.init(name: "MyGame", imageData: nil, abbreviation: "GG")
+        let gameViewModel = DefaultGameViewModel.init(game: game)
+        XCTAssertEqual(game.name, gameViewModel.name)
+        
+        
+        
     }
+    
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }

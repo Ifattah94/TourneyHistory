@@ -28,49 +28,44 @@
             </objects>
             <point key="canvasLocation" x="151" y="100"/>
         </scene>
-        <!--View Controller-->
+        <!--Default Game Selection View Controller-->
         <scene sceneID="D1a-eg-GZQ">
             <objects>
-                <viewController id="3GK-hb-dTc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DefaultGameSelectionViewController" id="3GK-hb-dTc" customClass="DefaultGameSelectionViewController" customModule="tourneyHistory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bbt-Pz-AKT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgo-lT-eOH">
-                                <rect key="frame" x="28" y="119.5" width="319" height="77"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="77" id="jL7-lQ-nHd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="udk-FZ-chd">
                                 <rect key="frame" x="16" y="427" width="343" height="224"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0NL-dR-QJn">
-                                    <size key="itemSize" width="253" height="218"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="byV-ib-y01">
+                                    <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2gD-JH-IZh">
-                                        <rect key="frame" x="45" y="0.0" width="253" height="218"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="defaultGameCell" id="2gD-JH-IZh" customClass="DefaultGameCell" customModule="tourneyHistory" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="253" height="218"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="3GK-hb-dTc" id="mpM-uE-H02"/>
+                                    <outlet property="delegate" destination="3GK-hb-dTc" id="htd-B7-YMc"/>
+                                </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose some games you like " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n36-38-8w7">
-                                <rect key="frame" x="28" y="52" width="319" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose some games you like " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n36-38-8w7">
+                                <rect key="frame" x="28" y="18.5" width="319" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="s8F-Bz-Smx"/>
+                                    <constraint firstAttribute="height" constant="100" id="s8F-Bz-Smx"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -78,6 +73,12 @@
                                 <rect key="frame" x="122" y="328.5" width="131" height="30"/>
                                 <state key="normal" title="Submit"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggG-JD-hKG">
+                                <rect key="frame" x="0.0" y="167" width="375" height="147"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -87,16 +88,22 @@
                             <constraint firstItem="n36-38-8w7" firstAttribute="centerX" secondItem="xHl-LQ-dNq" secondAttribute="centerX" id="KWO-jA-x3r"/>
                             <constraint firstItem="n36-38-8w7" firstAttribute="width" secondItem="bbt-Pz-AKT" secondAttribute="width" multiplier="0.85" id="Mbo-7g-Sh4"/>
                             <constraint firstItem="n36-38-8w7" firstAttribute="centerY" secondItem="xHl-LQ-dNq" secondAttribute="centerY" multiplier="0.2" id="Otd-UB-wOj"/>
-                            <constraint firstItem="Zgo-lT-eOH" firstAttribute="centerX" secondItem="xHl-LQ-dNq" secondAttribute="centerX" id="PMP-Xz-CSz"/>
                             <constraint firstItem="Cal-3S-25A" firstAttribute="width" secondItem="bbt-Pz-AKT" secondAttribute="width" multiplier="0.35" id="QUb-d3-E95"/>
-                            <constraint firstItem="Zgo-lT-eOH" firstAttribute="centerY" secondItem="xHl-LQ-dNq" secondAttribute="centerY" multiplier="0.46" id="Tq2-XY-my2"/>
                             <constraint firstItem="Cal-3S-25A" firstAttribute="centerY" secondItem="xHl-LQ-dNq" secondAttribute="centerY" id="Vo8-zS-iz1"/>
+                            <constraint firstItem="ggG-JD-hKG" firstAttribute="height" secondItem="bbt-Pz-AKT" secondAttribute="height" multiplier="0.22" id="Xi9-17-VCW"/>
+                            <constraint firstItem="ggG-JD-hKG" firstAttribute="width" secondItem="bbt-Pz-AKT" secondAttribute="width" id="a0O-BJ-Bjg"/>
                             <constraint firstItem="xHl-LQ-dNq" firstAttribute="trailing" secondItem="udk-FZ-chd" secondAttribute="trailing" constant="16" id="c3x-lf-8ni"/>
+                            <constraint firstItem="ggG-JD-hKG" firstAttribute="centerY" secondItem="xHl-LQ-dNq" secondAttribute="centerY" multiplier="0.7" id="kCL-9l-kMc"/>
+                            <constraint firstItem="ggG-JD-hKG" firstAttribute="centerX" secondItem="xHl-LQ-dNq" secondAttribute="centerX" id="q4r-tY-iPM"/>
                             <constraint firstItem="xHl-LQ-dNq" firstAttribute="bottom" secondItem="udk-FZ-chd" secondAttribute="bottom" constant="16" id="wF2-g2-G7I"/>
-                            <constraint firstItem="Zgo-lT-eOH" firstAttribute="width" secondItem="bbt-Pz-AKT" secondAttribute="width" multiplier="0.85" id="zBi-vS-0PH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xHl-LQ-dNq"/>
                     </view>
+                    <connections>
+                        <outlet property="gamesCollectionView" destination="udk-FZ-chd" id="Wob-Ut-tOc"/>
+                        <outlet property="gamesLabel" destination="ggG-JD-hKG" id="WRk-XX-Lim"/>
+                        <outlet property="submitButton" destination="Cal-3S-25A" id="cn0-Sf-vZm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eev-8V-Bgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

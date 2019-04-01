@@ -32,7 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             let storyboard = UIStoryboard(name: "AccountCreation", bundle: nil)
             let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-            window?.rootViewController = loginViewController
+            let gameSelectionVC = storyboard.instantiateViewController(withIdentifier: "DefaultGameSelectionViewController")
+            window?.rootViewController = gameSelectionVC
         }
         window?.makeKeyAndVisible()
         

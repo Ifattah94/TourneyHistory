@@ -19,7 +19,6 @@ final class DatabaseManager {
         // gets a reference to firestore database
         let db = Firestore.firestore()
         let settings = db.settings
-        settings.areTimestampsInSnapshotsEnabled = true
         db.settings = settings
         
         return db

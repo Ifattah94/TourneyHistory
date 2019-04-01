@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		81034FFD2243EEDE00C2B582 /* DefaultGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81034FFB2243EEDE00C2B582 /* DefaultGameCell.swift */; };
 		81034FFE2243EEDE00C2B582 /* DefaultGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81034FFC2243EEDE00C2B582 /* DefaultGameCell.xib */; };
+		812F6FC6224FDD7F006F3972 /* DefaultGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F6FC5224FDD7F006F3972 /* DefaultGameManager.swift */; };
+		812F6FCC224FF3E6006F3972 /* tourneyHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812F6FC9224FF362006F3972 /* tourneyHistoryTests.swift */; };
+		81313CC6224E76E4002FE413 /* DefaultGameSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81313CC5224E76E4002FE413 /* DefaultGameSelectionViewController.swift */; };
 		81A44AC522419B8B0075D63A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A44AC422419B8B0075D63A /* LoginViewController.swift */; };
 		81A44AC72241A0240075D63A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81A44AC62241A0240075D63A /* Home.storyboard */; };
 		81A44AC92241A1C40075D63A /* DatabaseKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A44AC82241A1C40075D63A /* DatabaseKeys.swift */; };
@@ -17,10 +20,8 @@
 		81AA1D3F223BFCCD001974F1 /* tourneyHistory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81AA1D3D223BFCCD001974F1 /* tourneyHistory.xcdatamodeld */; };
 		81AA1D41223BFCCF001974F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AA1D40223BFCCF001974F1 /* Assets.xcassets */; };
 		81AA1D44223BFCCF001974F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AA1D42223BFCCF001974F1 /* LaunchScreen.storyboard */; };
-		81AA1D4F223BFCCF001974F1 /* tourneyHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA1D4E223BFCCF001974F1 /* tourneyHistoryTests.swift */; };
 		81AA1D5A223BFD02001974F1 /* AccountCreation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AA1D59223BFD02001974F1 /* AccountCreation.storyboard */; };
 		81AA1D5C223C03DE001974F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81AA1D5B223C03DE001974F1 /* GoogleService-Info.plist */; };
-		81AA1D5E223C0AEE001974F1 /* DefaultGamesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA1D5D223C0AEE001974F1 /* DefaultGamesManager.swift */; };
 		81AA1D60223C0B15001974F1 /* DefaultGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA1D5F223C0B15001974F1 /* DefaultGame.swift */; };
 		81AA1D6A223C2C91001974F1 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA1D69223C2C91001974F1 /* ImageCache.swift */; };
 		81AA1D6C223C2CBD001974F1 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA1D6B223C2CBD001974F1 /* NetworkHelper.swift */; };
@@ -29,6 +30,7 @@
 		81D5593A2240322500886A7C /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D559392240322500886A7C /* UIViewController+Alerts.swift */; };
 		81D5593C2240341B00886A7C /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81D5593B2240341B00886A7C /* LoginView.xib */; };
 		81D5593E22403B7100886A7C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D5593D22403B7100886A7C /* LoginView.swift */; };
+		81E61A2322453BC40096AD39 /* DefaultGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E61A2222453BC40096AD39 /* DefaultGameViewModel.swift */; };
 		86C3920B3EC40872CE449486 /* Pods_tourneyHistoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940D76FEA7069C2C2A8C5820 /* Pods_tourneyHistoryTests.framework */; };
 		933E9AE64208E8F112B7E03C /* Pods_tourneyHistory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B131E00D6F33B5579869383 /* Pods_tourneyHistory.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,9 @@
 		7990A65EB0451E0A15DAEFBC /* Pods-tourneyHistoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tourneyHistoryTests.release.xcconfig"; path = "Target Support Files/Pods-tourneyHistoryTests/Pods-tourneyHistoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		81034FFB2243EEDE00C2B582 /* DefaultGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGameCell.swift; sourceTree = "<group>"; };
 		81034FFC2243EEDE00C2B582 /* DefaultGameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DefaultGameCell.xib; sourceTree = "<group>"; };
+		812F6FC5224FDD7F006F3972 /* DefaultGameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGameManager.swift; sourceTree = "<group>"; };
+		812F6FC9224FF362006F3972 /* tourneyHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tourneyHistoryTests.swift; sourceTree = "<group>"; };
+		81313CC5224E76E4002FE413 /* DefaultGameSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGameSelectionViewController.swift; sourceTree = "<group>"; };
 		81A44AC422419B8B0075D63A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		81A44AC62241A0240075D63A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		81A44AC82241A1C40075D63A /* DatabaseKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseKeys.swift; sourceTree = "<group>"; };
@@ -60,11 +65,9 @@
 		81AA1D43223BFCCF001974F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81AA1D45223BFCCF001974F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81AA1D4A223BFCCF001974F1 /* tourneyHistoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tourneyHistoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AA1D4E223BFCCF001974F1 /* tourneyHistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tourneyHistoryTests.swift; sourceTree = "<group>"; };
 		81AA1D50223BFCCF001974F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81AA1D59223BFD02001974F1 /* AccountCreation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AccountCreation.storyboard; sourceTree = "<group>"; };
 		81AA1D5B223C03DE001974F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		81AA1D5D223C0AEE001974F1 /* DefaultGamesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGamesManager.swift; sourceTree = "<group>"; };
 		81AA1D5F223C0B15001974F1 /* DefaultGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGame.swift; sourceTree = "<group>"; };
 		81AA1D69223C2C91001974F1 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		81AA1D6B223C2CBD001974F1 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		81D559392240322500886A7C /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		81D5593B2240341B00886A7C /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		81D5593D22403B7100886A7C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		81E61A2222453BC40096AD39 /* DefaultGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGameViewModel.swift; sourceTree = "<group>"; };
 		8AE1A9BB06F2DF51DE844D04 /* Pods-tourneyHistory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tourneyHistory.release.xcconfig"; path = "Target Support Files/Pods-tourneyHistory/Pods-tourneyHistory.release.xcconfig"; sourceTree = "<group>"; };
 		940D76FEA7069C2C2A8C5820 /* Pods_tourneyHistoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tourneyHistoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D24C61D2C7D16E929B62718A /* Pods-tourneyHistory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tourneyHistory.debug.xcconfig"; path = "Target Support Files/Pods-tourneyHistory/Pods-tourneyHistory.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,6 +105,7 @@
 		81A44AC1224199960075D63A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				81E61A2222453BC40096AD39 /* DefaultGameViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -146,8 +151,8 @@
 		81AA1D4D223BFCCF001974F1 /* tourneyHistoryTests */ = {
 			isa = PBXGroup;
 			children = (
-				81AA1D4E223BFCCF001974F1 /* tourneyHistoryTests.swift */,
 				81AA1D50223BFCCF001974F1 /* Info.plist */,
+				812F6FC9224FF362006F3972 /* tourneyHistoryTests.swift */,
 			);
 			path = tourneyHistoryTests;
 			sourceTree = "<group>";
@@ -155,8 +160,8 @@
 		81AA1D61223C0B42001974F1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				81AA1D5D223C0AEE001974F1 /* DefaultGamesManager.swift */,
 				81AA1D5F223C0B15001974F1 /* DefaultGame.swift */,
+				812F6FC5224FDD7F006F3972 /* DefaultGameManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				81A44AC422419B8B0075D63A /* LoginViewController.swift */,
+				81313CC5224E76E4002FE413 /* DefaultGameSelectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -439,8 +445,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81313CC6224E76E4002FE413 /* DefaultGameSelectionViewController.swift in Sources */,
 				81AA1D6A223C2C91001974F1 /* ImageCache.swift in Sources */,
-				81AA1D5E223C0AEE001974F1 /* DefaultGamesManager.swift in Sources */,
 				81A44ACB2241A2600075D63A /* DatabaseManager.swift in Sources */,
 				81AA1D3F223BFCCD001974F1 /* tourneyHistory.xcdatamodeld in Sources */,
 				81AA1D37223BFCCD001974F1 /* AppDelegate.swift in Sources */,
@@ -452,7 +458,9 @@
 				81D5593A2240322500886A7C /* UIViewController+Alerts.swift in Sources */,
 				81D5593E22403B7100886A7C /* LoginView.swift in Sources */,
 				81D559372240315500886A7C /* UserSession.swift in Sources */,
+				812F6FC6224FDD7F006F3972 /* DefaultGameManager.swift in Sources */,
 				81A44AC522419B8B0075D63A /* LoginViewController.swift in Sources */,
+				81E61A2322453BC40096AD39 /* DefaultGameViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81AA1D4F223BFCCF001974F1 /* tourneyHistoryTests.swift in Sources */,
+				812F6FCC224FF3E6006F3972 /* tourneyHistoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +656,25 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V9HW99M5PX;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth/FirebaseAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage/FirebaseStorage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf/Protobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuthInterop\"",
+					"${SRCROOT}/Pods/Firebase/CoreOnly/Sources",
+				);
 				INFOPLIST_FILE = tourneyHistoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -670,6 +697,25 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V9HW99M5PX;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/BoringSSL-GRPC/openssl_grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth/FirebaseAuth.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/FirebaseFirestore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage/FirebaseStorage.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf/Protobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/grpcpp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-Core/grpc.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAuthInterop\"",
+					"${SRCROOT}/Pods/Firebase/CoreOnly/Sources",
+				);
 				INFOPLIST_FILE = tourneyHistoryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

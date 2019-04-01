@@ -9,6 +9,7 @@
 import Foundation
 struct DefaultGame {
     let name: String
-    let imageData: Data
+    let imageData: Data?
+    let abbreviation: String
     
 }
