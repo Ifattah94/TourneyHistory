@@ -9,4 +9,5 @@
 import Foundation
 struct DatabaseKeys {
     static let UsersCollectionKey = "users" // firestore collection key
+    static let defaultGameCollectionKey = "defaultGames"
 }

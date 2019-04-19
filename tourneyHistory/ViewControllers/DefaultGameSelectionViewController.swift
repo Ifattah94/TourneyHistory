@@ -20,7 +20,9 @@ class DefaultGameSelectionViewController: UIViewController {
     var gameViewModels = [DefaultGameViewModel]()
     let cellID = "defaultGameCell"
     let cellSpacing = UIScreen.main.bounds.size.width * 0.001
-   
+    private var usersession: UserSession!
+    
+    
     var selectedDefaultGameModels: [DefaultGameViewModel] = [] {
         didSet {
             var strArr = [String]()
@@ -35,12 +37,53 @@ class DefaultGameSelectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupSubmitButton()
+        usersession = (UIApplication.shared.delegate as! AppDelegate).usersession
+        submitButton.isEnabled = true
         gamesCollectionView.allowsMultipleSelection = true
         let nib = UINib(nibName: "DefaultGameCell", bundle: nil)
         gamesCollectionView.register(nib, forCellWithReuseIdentifier: cellID)
         getGames()
 
     }
+    
+    private func presentHomeVC() {
+        let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeVC")
+        present(homeVC, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func submitButtonPressed(_ sender: UIButton) {
+        sender.transform = CGAffineTransform(scaleX: 0.6, y: 0.4)
+        
+        UIView.animate(withDuration: 1.0,
+                       delay: 0,
+                       usingSpringWithDamping: CGFloat(0.40),
+                       initialSpringVelocity: CGFloat(4.0),
+                       options: UIView.AnimationOptions.allowUserInteraction,
+                       animations: {
+                        sender.transform = CGAffineTransform.identity
+        },
+                       completion: { Void in(
+                        DatabaseManager.addDefaultGames(defaultGameVM: self.selectedDefaultGameModels, userSession: self.usersession),
+                        self.presentHomeVC()
+                        
+                        )  }
+        )
+        
+    }
+    
+
+    
+    
+    
+    
+    fileprivate func setupSubmitButton() {
+        submitButton.layer.borderWidth = 1
+        submitButton.layer.borderColor = UIColor.black.cgColor
+    }
+    
     
     fileprivate func getGames() {
         DefaultGameManager.shared.fetchDefaultGames { (error, games) in

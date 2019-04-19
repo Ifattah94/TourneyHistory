@@ -26,14 +26,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
 
         if let _ = usersession.getCurrentUser() {
-            let storyboard = UIStoryboard(name: "Home", bundle: nil)
-            let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeVC")
-            window?.rootViewController = homeVC
+            window?.rootViewController = ContainerController()
         } else {
             let storyboard = UIStoryboard(name: "AccountCreation", bundle: nil)
             let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
             let gameSelectionVC = storyboard.instantiateViewController(withIdentifier: "DefaultGameSelectionViewController")
-            window?.rootViewController = gameSelectionVC
+            window?.rootViewController = loginViewController
         }
         window?.makeKeyAndVisible()
         

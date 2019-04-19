@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="udk-FZ-chd">
-                                <rect key="frame" x="16" y="427" width="343" height="224"/>
+                                <rect key="frame" x="16" y="424" width="343" height="227"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="byV-ib-y01">
                                     <size key="itemSize" width="50" height="50"/>
@@ -69,9 +69,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cal-3S-25A">
-                                <rect key="frame" x="122" y="328.5" width="131" height="30"/>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cal-3S-25A">
+                                <rect key="frame" x="122" y="327" width="131" height="33"/>
+                                <color key="backgroundColor" red="0.94386574069999996" green="0.93874180169999999" blue="0.95361930939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="3GK-hb-dTc" eventType="touchUpInside" id="WiO-xh-UBT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggG-JD-hKG">
                                 <rect key="frame" x="0.0" y="167" width="375" height="147"/>
@@ -82,7 +87,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="udk-FZ-chd" firstAttribute="top" secondItem="Cal-3S-25A" secondAttribute="bottom" constant="68.5" id="487-Eb-3Ia"/>
                             <constraint firstItem="udk-FZ-chd" firstAttribute="leading" secondItem="xHl-LQ-dNq" secondAttribute="leading" constant="16" id="FAW-Ry-cQd"/>
                             <constraint firstItem="Cal-3S-25A" firstAttribute="centerX" secondItem="xHl-LQ-dNq" secondAttribute="centerX" id="Ikz-dn-vvB"/>
                             <constraint firstItem="n36-38-8w7" firstAttribute="centerX" secondItem="xHl-LQ-dNq" secondAttribute="centerX" id="KWO-jA-x3r"/>
@@ -94,8 +98,10 @@
                             <constraint firstItem="ggG-JD-hKG" firstAttribute="width" secondItem="bbt-Pz-AKT" secondAttribute="width" id="a0O-BJ-Bjg"/>
                             <constraint firstItem="xHl-LQ-dNq" firstAttribute="trailing" secondItem="udk-FZ-chd" secondAttribute="trailing" constant="16" id="c3x-lf-8ni"/>
                             <constraint firstItem="ggG-JD-hKG" firstAttribute="centerY" secondItem="xHl-LQ-dNq" secondAttribute="centerY" multiplier="0.7" id="kCL-9l-kMc"/>
+                            <constraint firstItem="udk-FZ-chd" firstAttribute="top" secondItem="Cal-3S-25A" secondAttribute="bottom" constant="64" id="pVr-t9-ieM"/>
                             <constraint firstItem="ggG-JD-hKG" firstAttribute="centerX" secondItem="xHl-LQ-dNq" secondAttribute="centerX" id="q4r-tY-iPM"/>
                             <constraint firstItem="xHl-LQ-dNq" firstAttribute="bottom" secondItem="udk-FZ-chd" secondAttribute="bottom" constant="16" id="wF2-g2-G7I"/>
+                            <constraint firstItem="Cal-3S-25A" firstAttribute="height" secondItem="bbt-Pz-AKT" secondAttribute="height" multiplier="0.05" id="xQc-ph-r5H"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xHl-LQ-dNq"/>
                     </view>
