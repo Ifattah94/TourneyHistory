@@ -75,10 +75,6 @@ class DefaultGameSelectionViewController: UIViewController {
     }
     
 
-    
-    
-    
-    
     fileprivate func setupSubmitButton() {
         submitButton.layer.borderWidth = 1
         submitButton.layer.borderColor = UIColor.black.cgColor

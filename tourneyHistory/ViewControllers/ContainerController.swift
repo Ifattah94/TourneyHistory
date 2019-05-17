@@ -11,6 +11,7 @@ import UIKit
 class ContainerController: UIViewController {
     
     var menuController: MenuController!
+    var homeController: HomeController!
     var centerController: UIViewController!
     var isExpanded = false
     
@@ -34,7 +35,7 @@ class ContainerController: UIViewController {
     
     
     func configureHomeController() {
-        let homeController = HomeController()
+        self.homeController = HomeController()
         homeController.delegate = self
         centerController = UINavigationController.init(rootViewController: homeController)
         view.addSubview(centerController.view)
@@ -87,6 +88,15 @@ class ContainerController: UIViewController {
 }
 
 extension ContainerController: HomeControllerDelegate {
+    func handleTapForExpansion() {
+        if isExpanded {
+            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
+                self.centerController.view.frame.origin.x = 0
+            })
+        }
+    }
+    
+    
     func handleMenuToggle(forMenuOption menuOption: MenuOption?) {
         if !isExpanded {
             configureMenuController()

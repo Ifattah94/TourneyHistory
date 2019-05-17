@@ -12,10 +12,12 @@ class HomeController: UIViewController {
     
     weak var delegate: HomeControllerDelegate?
     let homeView = HomeView()
-    
+    var tap: UITapGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.addSubview(homeView)
+        self.tap = UITapGestureRecognizer(target: self, action: #selector(handleExpansion))
+        self.view.addGestureRecognizer(tap)
         view.backgroundColor = .white
         configureNavigationBar()
         configureCollectionView()
@@ -23,6 +25,10 @@ class HomeController: UIViewController {
     
     @objc func handleMenuToggle() {
         delegate?.handleMenuToggle(forMenuOption: nil)
+    }
+    
+    @objc func handleExpansion() {
+        delegate?.handleTapForExpansion()
     }
     
     private func configureCollectionView() {
