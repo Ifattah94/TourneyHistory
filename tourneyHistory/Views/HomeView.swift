@@ -13,7 +13,7 @@ class HomeView: UIView {
     public var cellID = "tourneyCollectionCell"
     lazy var tourneyCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
+        layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: self.bounds, collectionViewLayout: layout)
         cv.register(TourneyCell.self, forCellWithReuseIdentifier: cellID)
         cv.backgroundColor = .white
@@ -49,7 +49,7 @@ class HomeView: UIView {
         tourneyCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         tourneyCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
         tourneyCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        tourneyCollectionView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.40).isActive = true
+        tourneyCollectionView.topAnchor.constraint(equalTo: topAnchor).isActive = true 
         
     }
     

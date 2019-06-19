@@ -61,6 +61,6 @@ extension HomeController: UICollectionViewDataSource {
 
 extension HomeController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.width * 0.86, height: self.view.frame.height * 0.54)
+        return CGSize(width: self.view.frame.width , height: self.view.frame.height * 0.30)
     }
 }
